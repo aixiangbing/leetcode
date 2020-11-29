@@ -12,7 +12,7 @@ type ListNode struct {
 type MyLinkedList struct {
 	Header *ListNode `json:"header"`
 	Tail   *ListNode `json:"tail"`
-	Lens   int       `json:"lens"`
+	Size   int       `json:"size"`
 }
 
 /** Initialize your data structure here. */
@@ -20,14 +20,14 @@ func Constructor() MyLinkedList {
 	return MyLinkedList{
 		Header: nil,
 		Tail:   nil,
-		Lens:   0,
+		Size:   0,
 	}
 }
 
 /** Get the value of the index-th node in the linked list. If the index is invalid, return -1. */
 func (this *MyLinkedList) Get(index int) int {
 	// 如果获取的位置小于0或者等于链表长度,直接返回-1(注意链表下标从0开始,所以这地方可以等于)
-	if index < 0 || index >= this.Lens {
+	if index < 0 || index >= this.Size {
 		return -1
 	}
 
@@ -60,23 +60,23 @@ func (this *MyLinkedList) AddAtHead(val int) {
 	}
 
 	// 如果当前链表为空,那么增加一个节点,这个节点既是头节点又是尾节点
-	if this.Lens == 0 {
+	if this.Size == 0 {
 		this.Tail = this.Header
 	}
 	// 因为增加了节点,所以链表长度+1
-	this.Lens++
+	this.Size++
 }
 
 /** Append a node of value val to the last element of the linked list. */
 func (this *MyLinkedList) AddAtTail(val int) {
 	// 如果当前链表为空,那么增加尾部,也就是加个头部..
-	if this.Lens == 0 {
+	if this.Size == 0 {
 		this.Tail = &ListNode{
 			Val:  val,
 			Next: nil,
 		}
 		this.Header = this.Tail
-		this.Lens++
+		this.Size++
 		return
 	}
 	// 尾节点本来next等于nil,现在加一个,next等于这个节点
@@ -89,7 +89,7 @@ func (this *MyLinkedList) AddAtTail(val int) {
 	this.Tail = this.Tail.Next
 
 	// 新增节点,链表长度+1
-	this.Lens++
+	this.Size++
 }
 
 /** Add a node of value val before the index-th node in the linked list. If index equals to the length of linked list, the node will be appended to the end of linked list. If index is greater than the length, the node will not be inserted. */
@@ -102,12 +102,12 @@ func (this *MyLinkedList) AddAtIndex(index int, val int) {
 	}
 
 	//   如果 index 大于链表长度，则不会插入节点。
-	if index > this.Lens {
+	if index > this.Size {
 		return
 	}
 
 	//   如果 index 等于链表的长度，则该节点将附加到链表的末尾。
-	if index == this.Lens {
+	if index == this.Size {
 		this.AddAtTail(val)
 		return
 	}
@@ -123,7 +123,7 @@ func (this *MyLinkedList) AddAtIndex(index int, val int) {
 			}
 			node.Next = newNode
 			// 记得长度+1
-			this.Lens++
+			this.Size++
 			// 记得要返回..
 			return
 		}
@@ -135,14 +135,14 @@ func (this *MyLinkedList) AddAtIndex(index int, val int) {
 /** Delete the index-th node in the linked list, if the index is valid. */
 func (this *MyLinkedList) DeleteAtIndex(index int) {
 	// 如果index小于0或者大于等于长度,直接返回
-	if index < 0 || index >= this.Lens {
+	if index < 0 || index >= this.Size {
 		return
 	}
 
 	// 如果等于0,就是删除头节点,记得链表长度-1
 	if index == 0 {
 		this.Header = this.Header.Next
-		this.Lens--
+		this.Size--
 		return
 	}
 
@@ -154,13 +154,13 @@ func (this *MyLinkedList) DeleteAtIndex(index int) {
 			if node.Next.Next == nil {
 				node.Next = nil
 				this.Tail = node
-				this.Lens--
+				this.Size--
 				return
 			}
 			// 其他情况就是删除中间一个节点(A->B->C),操作就是  A 直接指向 C 就行 (A->C)
 			node2 := node.Next.Next
 			node.Next = node2
-			this.Lens--
+			this.Size--
 			return
 		}
 		node = node.Next
