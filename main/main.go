@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"leetcode/leetcode/linkedList"
+	"leetcode/leetcode/letterCombination"
 )
 
 func main()  {
@@ -13,5 +14,12 @@ func main()  {
 	p.Get(1)
 	p.DeleteAtIndex(1)
 	fmt.Println(p.Get(1))
+
+	l := letterCombination.LetterCombinations{}
+	s := l.LetterCombination("234")
+
+	fmt.Println(s)
+
+
 
 }
