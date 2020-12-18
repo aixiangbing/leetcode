@@ -2,24 +2,29 @@ package main
 
 import (
 	"fmt"
-	"leetcode/leetcode/linkedList"
-	"leetcode/leetcode/letterCombination"
+	"leetcode/leetcode/RadixSort"
 )
 
 func main()  {
-	p := linkedList.MyLinkedList{}
-	p.AddAtHead(1)
-	p.AddAtTail(3)
-	p.AddAtIndex(1, 2)
-	p.Get(1)
-	p.DeleteAtIndex(1)
-	fmt.Println(p.Get(1))
+	//p := linkedList.MyLinkedList{}
+	//p.AddAtHead(1)
+	//p.AddAtTail(3)
+	//p.AddAtIndex(1, 2)
+	//p.Get(1)
+	//p.DeleteAtIndex(1)
+	//fmt.Println(p.Get(1))
+	//
+	//l := letterCombination.LetterCombinations{}
+	//s := l.LetterCombination("234")
+	//
+	//fmt.Println(s)
 
-	l := letterCombination.LetterCombinations{}
-	s := l.LetterCombination("234")
+	nums := []int{2, 3, 4, 11, 12, 9, 6, 100, 99, 56, 1010, 321, 1, 19}
 
-	fmt.Println(s)
+	selfSort := RadixSort.RadixSort{}
 
+	res := selfSort.Sort(nums)
 
+	fmt.Println(res)
 
 }
