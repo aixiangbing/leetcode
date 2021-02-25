@@ -1,8 +1,7 @@
 package main
 
 import (
-	"fmt"
-	"leetcode/leetcode/RadixSort"
+	"leetcode/leetcode/RandPrint"
 )
 
 func main()  {
@@ -19,12 +18,18 @@ func main()  {
 	//
 	//fmt.Println(s)
 
-	nums := []int{2, 3, 4, 11, 12, 9, 6, 100, 99, 56, 1010, 321, 1, 19}
+	//nums := []int{2, 3, 4, 11, 12, 9, 6, 100, 99, 56, 1010, 321, 1, 19}
+	//
+	//selfSort := RadixSort.RadixSort{}
+	//
+	//res := selfSort.Sort(nums)
+	//
+	//fmt.Println(res)
+	//
+	//randPrint := RandPrint.RandPrint{}
+	//randPrint.Print()
 
-	selfSort := RadixSort.RadixSort{}
+	randNum := RandPrint.RandNum{}
 
-	res := selfSort.Sort(nums)
-
-	fmt.Println(res)
-
+	randNum.RandPrintNum()
 }
