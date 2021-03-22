@@ -20,12 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d627315-404a-4e7b-94d7-0bd3d354e62e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MaxEnvelopes/MaxEnvelopes.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RemoveDuplicates/RemoveDuplicates.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SortList/SortList.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThreeNumberSum/ThreeNumberSum.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ThreeSum/ThreeSum.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterSect/intersect.go" beforeDir="false" afterPath="$PROJECT_DIR$/InterSect/intersect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LongestPalindrome.go" beforeDir="false" afterPath="$PROJECT_DIR$/LongestPalindrome.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LongestValidParentheses/longestValidParentheses.go" beforeDir="false" afterPath="$PROJECT_DIR$/LongestValidParentheses/longestValidParentheses.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SearchRange/searchRange.go" beforeDir="false" afterPath="$PROJECT_DIR$/SearchRange/searchRange.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +90,10 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
+    <state x="2320" y="471" key="Vcs.Push.Dialog.v2" timestamp="1616405868016">
+      <screen x="1440" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2320" y="471" key="Vcs.Push.Dialog.v2/0.0.1440.900/1440.0.2560.1440@1440.0.2560.1440" timestamp="1616405868016" />
     <state x="2385" y="352" width="670" height="676" key="search.everywhere.popup" timestamp="1614233514634">
       <screen x="1440" y="0" width="2560" height="1440" />
     </state>
