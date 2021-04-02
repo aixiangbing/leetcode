@@ -21,10 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8d627315-404a-4e7b-94d7-0bd3d354e62e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InterSect/intersect.go" beforeDir="false" afterPath="$PROJECT_DIR$/InterSect/intersect.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LongestPalindrome.go" beforeDir="false" afterPath="$PROJECT_DIR$/LongestPalindrome.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LongestValidParentheses/longestValidParentheses.go" beforeDir="false" afterPath="$PROJECT_DIR$/LongestValidParentheses/longestValidParentheses.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SearchRange/searchRange.go" beforeDir="false" afterPath="$PROJECT_DIR$/SearchRange/searchRange.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

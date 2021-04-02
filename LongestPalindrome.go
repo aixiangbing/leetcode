@@ -63,7 +63,7 @@ func longestPalindromeThree(s string)  string {
 
 	// 定义字符串的长度
 	len := len(s)
-	if (len < 2) {
+	if len < 2 {
 		return s
 	}
 
